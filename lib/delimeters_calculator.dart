@@ -8,3 +8,27 @@ int nod(int a, int b){
   return result;
 }
 
+num nok(int a, int b){
+  late num result;
+  result = a*b/nod(a, b);
+  return result;
+}
+
+List<String> mult(num a){
+  late List<String> result = [];
+  int div = 2;
+
+  while (a > 1)
+  {
+    while (a % div == 0)
+    {
+     result.add(div.toString());
+     a = a / div;
+    }
+    div++;
+  }
+
+return result;
+
+}
+
